@@ -1,0 +1,14 @@
+C:\Users\osha-l1\source\repos\OpgaveBesvarelser\OpgaveBesvarelser\obj\Debug\net8.0\OpgaveBesvarelser.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\osha-l1\source\repos\OpgaveBesvarelser\OpgaveBesvarelser\obj\Debug\net8.0\OpgaveBesvarelser.AssemblyInfoInputs.cache
+C:\Users\osha-l1\source\repos\OpgaveBesvarelser\OpgaveBesvarelser\obj\Debug\net8.0\OpgaveBesvarelser.AssemblyInfo.cs
+C:\Users\osha-l1\source\repos\OpgaveBesvarelser\OpgaveBesvarelser\obj\Debug\net8.0\OpgaveBesvarelser.csproj.CoreCompileInputs.cache
+C:\Users\osha-l1\source\repos\OpgaveBesvarelser\OpgaveBesvarelser\bin\Debug\net8.0\OpgaveBesvarelser.exe
+C:\Users\osha-l1\source\repos\OpgaveBesvarelser\OpgaveBesvarelser\bin\Debug\net8.0\OpgaveBesvarelser.deps.json
+C:\Users\osha-l1\source\repos\OpgaveBesvarelser\OpgaveBesvarelser\bin\Debug\net8.0\OpgaveBesvarelser.runtimeconfig.json
+C:\Users\osha-l1\source\repos\OpgaveBesvarelser\OpgaveBesvarelser\bin\Debug\net8.0\OpgaveBesvarelser.dll
+C:\Users\osha-l1\source\repos\OpgaveBesvarelser\OpgaveBesvarelser\bin\Debug\net8.0\OpgaveBesvarelser.pdb
+C:\Users\osha-l1\source\repos\OpgaveBesvarelser\OpgaveBesvarelser\obj\Debug\net8.0\OpgaveBesvarelser.dll
+C:\Users\osha-l1\source\repos\OpgaveBesvarelser\OpgaveBesvarelser\obj\Debug\net8.0\refint\OpgaveBesvarelser.dll
+C:\Users\osha-l1\source\repos\OpgaveBesvarelser\OpgaveBesvarelser\obj\Debug\net8.0\OpgaveBesvarelser.pdb
+C:\Users\osha-l1\source\repos\OpgaveBesvarelser\OpgaveBesvarelser\obj\Debug\net8.0\OpgaveBesvarelser.genruntimeconfig.cache
+C:\Users\osha-l1\source\repos\OpgaveBesvarelser\OpgaveBesvarelser\obj\Debug\net8.0\ref\OpgaveBesvarelser.dll
