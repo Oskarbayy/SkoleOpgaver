@@ -3,7 +3,6 @@ partial class Program
 {
     static int gæt = 0;
 
-    static Random random = new Random();
     static int hemmeligtTal = random.Next(1, 11);
 
     static void GætEtTal()
