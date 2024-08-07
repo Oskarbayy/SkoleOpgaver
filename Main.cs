@@ -1,15 +1,16 @@
-﻿// Prompt
-
+﻿using System.Diagnostics;
 using System.Reflection;
 
-partial class Program
+partial class Program : Buffer
 {
     static Random random = new Random();
-
     static private bool on = true;
 
-    static void Main()
+    static void Main(string[] args)
     {
+        int itemsPerPage = 15;
+        int currentPage = 0;
+
         // Find path til 'Opgaver' folder for at opnå automatisk opdatering af liste til menu
         string projectRoot = Directory.GetParent(Directory.GetCurrentDirectory()).Parent.Parent.FullName;
         string opgaverPath = Path.Combine(projectRoot, "Opgaver");
@@ -21,66 +22,124 @@ partial class Program
         {
             Opgaver.Add(Path.GetFileNameWithoutExtension(scriptFile));
         }
-        // 
+
         int selectedIndex = 0;
 
+        //
+        int maxPage = (int)Math.Ceiling((double)Opgaver.Count / itemsPerPage) - 1;
+
+
+        // Try and Draw Box to the buffer
+        DrawBox(0, 0, 20, 60);
+        AddText(1, 26, "Opgaver");
 
         // Start Main Loop
         do
         {
-            Console.Clear();
-
-            // Draw List
-            for (int i = 0; i < Opgaver.Count; i++)
+            Console.CursorVisible = false;
+            // Clear the portion of the buffer where the list is drawn
+            for (int i = 2; i < 18; i++)
             {
+                AddText(i, 2, new string(' ', 56));
+            }
+
+            // Update Page Text
+            string pageText = $"Side {currentPage+1} / {maxPage+1}"; // + 1 to make more sense when its front end feedback
+            string noText = "              ";
+
+            AddText(1, 58 - noText.Length, noText);
+            AddText(1, 58 - pageText.Length, pageText);
+
+            // Calculate the starting row for centering the text
+            int startRow = 10 - (itemsPerPage / 2);
+
+
+            for (int i = itemsPerPage*currentPage; i < Opgaver.Count && i<itemsPerPage*(currentPage+1); i++)
+            {
+                string displayText = Opgaver[i];
+                ConsoleColor color = ConsoleColor.Black;
                 if (i == selectedIndex)
                 {
-                    // Highlight the selected item
-                    Console.BackgroundColor = ConsoleColor.Gray;
-                    Console.ForegroundColor = ConsoleColor.Black;
-                    Console.WriteLine(Opgaver[i]);
-                    Console.ResetColor();
+                    color = ConsoleColor.White;
                 }
-                else
-                {
-                    Console.WriteLine(Opgaver[i]);
-                }
+
+                // Calculate horizontal padding to center the text
+                int padding = (56 - displayText.Length) / 2;
+                AddText(startRow + i - itemsPerPage*currentPage, 2 + padding, displayText, color);
             }
-            Console.WriteLine();
-            Console.WriteLine("Brug op og ned pile...");
+
+            // Check state to show arrows or not
+            if (currentPage < maxPage)
+            {
+                AddText(18, 56, "->");
+            } else
+            {
+                AddText(18, 56, "  ");
+            }
+            if (currentPage != 0)
+            {
+                AddText(18, 2, "<-");
+            } else
+            {
+                AddText(18, 2, "  ");
+            }
+
+            Render();
+            
+            // Reset the input queue so multiple old events dont get run
+            while (Console.KeyAvailable)
+            {
+                Console.ReadKey(true);
+            }
 
             // Get user input
-            ConsoleKeyInfo keyInfo = Console.ReadKey();
+            ConsoleKey Key = Console.ReadKey(true).Key;
 
             // Update selection based on arrow keys
-            if (keyInfo.Key == ConsoleKey.UpArrow)
+            switch (Key)
             {
-                if (selectedIndex > 0)
-                {
-                    selectedIndex--;
-                }
-            }
-            else if (keyInfo.Key == ConsoleKey.DownArrow)
-            {
-                if (selectedIndex < Opgaver.Count - 1)
-                {
-                    selectedIndex++;
-                }
-            }
-            else if (keyInfo.Key == ConsoleKey.Enter)
-            {
-                // Handle the selection
-                string selectedOpgave = Opgaver[selectedIndex];
+                case ConsoleKey.UpArrow:
+                    if (selectedIndex > 0)
+                    {
+                        selectedIndex--;
+                    }
+                    break;
+                case ConsoleKey.DownArrow:
+                    if (selectedIndex < Opgaver.Count - 1)
+                    {
+                        selectedIndex++;
+                    }
+                    break;
+                case ConsoleKey.Enter:
+                    // Handle the selection
+                    string selectedOpgave = Opgaver[selectedIndex];
 
-                MethodInfo method = typeof(Program).GetMethod(selectedOpgave, BindingFlags.Static | BindingFlags.Public | BindingFlags.NonPublic);
-                if (method != null)
-                {
-                    Console.Clear();
-                    method.Invoke(null, null);
-                    Console.WriteLine("");
-                    Console.WriteLine("Tryk på en knap for at gå videre...");
-                    Console.ReadKey();
-                }
+                    MethodInfo method = typeof(Program).GetMethod(selectedOpgave, BindingFlags.Static | BindingFlags.Public | BindingFlags.NonPublic);
+                    if (method != null)
+                    {
+                        Console.Clear();
+                        Console.CursorVisible = true;
+                        method.Invoke(null, null);
+                        Console.WriteLine("");
+                        Console.WriteLine("Tryk på en knap for at gå videre...");
+                        Console.ReadKey();
+                        Console.Clear();
+                        Render(true);
+                    }
+                    break;
+                case ConsoleKey.RightArrow:
+                    // Check if another page could exist?
+                    if (currentPage < maxPage)
+                    {
+                        currentPage++;
+                    }
+                    break;
+                case ConsoleKey.LeftArrow:
+                    if (currentPage != 0)
+                    {
+                        currentPage--;
+                    }
+                    break;
             }
         } while (on);
     }
