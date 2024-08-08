@@ -11,9 +11,12 @@ partial class Program : Buffer
         int itemsPerPage = 15;
         int currentPage = 0;
 
+        // Get the base directory
+        string baseDirectory = AppDomain.CurrentDomain.BaseDirectory;
+        string projectDirectory = Directory.GetParent(baseDirectory).Parent.Parent.Parent.FullName;
+
         // Find path til 'Opgaver' folder for at opnå automatisk opdatering af liste til menu
-        string projectRoot = Directory.GetParent(Directory.GetCurrentDirectory()).Parent.Parent.FullName;
-        string opgaverPath = Path.Combine(projectRoot, "Opgaver");
+        string opgaverPath = Path.Combine(projectDirectory, "Opgaver");
 
         // Create List
         string[] scriptFiles = Directory.GetFiles(opgaverPath, "*.cs");
@@ -132,12 +135,14 @@ partial class Program : Buffer
                     if (currentPage < maxPage)
                     {
                         currentPage++;
+                        selectedIndex = itemsPerPage * currentPage;
                     }
                     break;
                 case ConsoleKey.LeftArrow:
                     if (currentPage != 0)
                     {
                         currentPage--;
+                        selectedIndex = itemsPerPage * currentPage;
                     }
                     break;
             }

@@ -1,6 +1,14 @@
-﻿
+﻿using NAudio.Wave;
+using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Media;
+using System.Text;
+
 partial class Program
 {
+    static SoundPlayer sp = new SoundPlayer();
+
     static void Mozart()
     {
         int[,] Minuetten = new int[,]
@@ -28,16 +36,113 @@ partial class Program
             { 18, 45, 62, 38,  4, 27, 52, 94, 11, 92, 24, 86, 51, 60, 78, 31 }
         };
 
-
         try
-        {
-            // Prompt
+        { 
+            // Get minuetten
+            int numberOfParts = 16;
 
+            List<string> files = new List<string>();
+
+            for (int part = 0; part < numberOfParts; part++)
+            {
+                // Random Dice
+                int dice = random.Next(2, 13);
+
+                // Look up file to play it later together with the Trioen
+                var fileSb = new StringBuilder();
+                string filePath = fileSb.Append("Mozarts/M").Append(Minuetten[dice - 2, part]).Append(".wav").ToString();
+                //string filePath = "Mozarts", "M" + Minuetten[dice - 2, part] + ".wav";
+                files.Add(filePath);
+            }
+
+            // Get trioen
+            for (int part = 0; part < numberOfParts; part++)
+            {
+                // Random Dice
+                int dice = random.Next(1, 7);
+
+                // Look up file
+                var fileSb = new StringBuilder();
+                string filePath = fileSb.Append("Mozarts/T").Append(Trioen[dice - 1, part]).Append(".wav").ToString();
+                files.Add(filePath);
+            }
+
+
+            // Play the sound files with overlapping
+            Console.WriteLine("CHECK FILES: " + files.Count);
+            PlayFilesWithOverlap(files).Wait();
+
+            /* Her er min soundPlayer solution men den var irreterrende at høre på så researchet "NAudio" i stedet
+            // Pre-load sound files into a dictionary
+            Dictionary<string, SoundPlayer> soundPlayers = new Dictionary<string, SoundPlayer>();
+            foreach (string file in files)
+            {
+                SoundPlayer sp = new SoundPlayer(file);
+                sp.Load(); // Pre-load the sound file
+                soundPlayers.Add(file, sp);
+            }
+
+            // Play the pre-loaded sound files
+            Console.WriteLine("CHECK FILES: " + soundPlayers.Count);
+            foreach (var entry in soundPlayers)
+            {
+                Console.WriteLine(entry.Key);
+                entry.Value.PlaySync();
+            }
+            */
         }
         catch (Exception ex)
         {
-            Console.WriteLine("Fejl, Prøv Igen");
-            Mozart();
+            Console.WriteLine("Fejl, Prøv Igen: " + ex.Message);
         }
     }
+    static async Task PlayFilesWithOverlap(List<string> files)
+    {
+        List<WaveOutEvent> waveOutEvents = new List<WaveOutEvent>();
+        List<AudioFileReader> audioFileReaders = new List<AudioFileReader>();
+
+        foreach (string file in files)
+        {
+            WaveOutEvent waveOut = new WaveOutEvent();
+            AudioFileReader audioFile = new AudioFileReader(file);
+            waveOut.Init(audioFile);
+            waveOutEvents.Add(waveOut);
+            audioFileReaders.Add(audioFile);
+        }
+
+        for (int i = 0; i < waveOutEvents.Count; i++)
+        {
+            Console.WriteLine($"Playing: {files[i]}");
+            waveOutEvents[i].Play();
+
+            if (i < waveOutEvents.Count - 1)
+            {
+                // Calculate delay to start the next file 0.5 seconds before the current one ends
+                var overlapTime = audioFileReaders[i].TotalTime.TotalMilliseconds - 100;
+                if (overlapTime > 0)
+                {
+                    await Task.Delay((int)overlapTime);
+                }
+            }
+        }
+
+        // Wait for the last sound to finish playing
+        if (waveOutEvents.Count > 0)
+        {
+            await Task.Delay((int)audioFileReaders.Last().TotalTime.TotalMilliseconds);
+        }
+
+        // Ensure all sounds finish playing
+        foreach (var waveOut in waveOutEvents)
+        {
+            waveOut.PlaybackStopped += (sender, e) => waveOut.Dispose();
+        }
+
+        // Dispose all audio file readers
+        foreach (var audioFile in audioFileReaders)
+        {
+            audioFile.Dispose();
+        }
+    }
+
 }
