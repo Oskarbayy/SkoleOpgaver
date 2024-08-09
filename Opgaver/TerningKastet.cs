@@ -34,5 +34,7 @@ partial class Program
                 break;
         }
         Console.ForegroundColor = ConsoleColor.White;
+        Console.WriteLine("\nTryk på en knap for at forsætte...");
+        Console.ReadKey();
     }
 }

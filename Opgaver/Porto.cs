@@ -146,7 +146,9 @@ partial class Program
         catch (Exception ex)
         {
             Console.WriteLine("Fejl, Prøv Igen");
-            CelciusOmregner();
+            Porto();
         }
+        Console.WriteLine("\nTryk på en knap for at forsætte...");
+        Console.ReadKey();
     }
 }

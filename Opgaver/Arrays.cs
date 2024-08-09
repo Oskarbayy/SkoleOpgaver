@@ -432,40 +432,22 @@ partial class Program
 
     static void Arrays()
     {
-        Console.WriteLine("Hvilken Opgave vil du se (1-7):");
-        Console.WriteLine("1 - Login Prompt");
-        Console.WriteLine("2 - Navne Data Styring");
-        Console.WriteLine("3 - Navne Data Styring Udvidet");
-        Console.WriteLine("4 - Karaktere");
-        Console.WriteLine("5 - Data Styring");
-        Console.WriteLine("6 - Todimmensionelt Array");
-        Console.WriteLine("7 - Simuler Excel");
-        double opgaveNummer = double.Parse(Console.ReadLine());
-        Console.Clear();
-        switch (opgaveNummer)
+        // Define the menu options
+        var options = new Dictionary<string, Action>
         {
-            case 1:
-                LoginPrompt();
-                break;
-            case 2:
-                DrengeNavne();
-                break;
-            case 3:
-                DrengeNavne();
-                break;
-            case 4:
-                Karakter();
-                break;
-            case 5:
-                DataStyring();
-                break;
-            case 6:
-                ToDimmensionelt();
-                break;
-            case 7:
-                SimulerExcel();
-                break;
+            { "Login Prompt", LoginPrompt },
+            { "Navne Data Styring", DrengeNavne },
+            { "Navne Data Styring Udvidet", DrengeNavne },
+            { "Karaktere", Karakter },
+            { "Data Styring", DataStyring },
+            { "Todimmensionelt Array", ToDimmensionelt },
+            { "Simuler Excel", SimulerExcel }
+        };
 
-        }
+        // Create the menu
+        WindowMenu menu = new WindowMenu(options, "Arrays");
+
+        // Start the menu
+        menu.Start();
     }
 }

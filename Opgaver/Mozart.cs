@@ -67,12 +67,11 @@ partial class Program
                 files.Add(filePath);
             }
 
-
             // Play the sound files with overlapping
             Console.WriteLine("CHECK FILES: " + files.Count);
             PlayFilesWithOverlap(files).Wait();
 
-            /* Her er min soundPlayer solution men den var irreterrende at høre på så researchet "NAudio" i stedet
+            //Her er min soundPlayer solution men den var irreterrende at høre på så researchet "NAudio" i stedet
             // Pre-load sound files into a dictionary
             Dictionary<string, SoundPlayer> soundPlayers = new Dictionary<string, SoundPlayer>();
             foreach (string file in files)
@@ -89,12 +88,14 @@ partial class Program
                 Console.WriteLine(entry.Key);
                 entry.Value.PlaySync();
             }
-            */
+            
         }
         catch (Exception ex)
         {
             Console.WriteLine("Fejl, Prøv Igen: " + ex.Message);
         }
+        Console.WriteLine("\nTryk på en knap for at forsætte...");
+        Console.ReadKey();
     }
     static async Task PlayFilesWithOverlap(List<string> files)
     {
@@ -118,7 +119,7 @@ partial class Program
             if (i < waveOutEvents.Count - 1)
             {
                 // Calculate delay to start the next file 0.5 seconds before the current one ends
-                var overlapTime = audioFileReaders[i].TotalTime.TotalMilliseconds - 100;
+                var overlapTime = audioFileReaders[i].TotalTime.TotalMilliseconds - 75;
                 if (overlapTime > 0)
                 {
                     await Task.Delay((int)overlapTime);

@@ -32,5 +32,7 @@
             Console.WriteLine("Fejl, Prøv Igen");
             Alder();
         }
+        Console.WriteLine("\nTryk på en knap for at forsætte...");
+        Console.ReadKey();
     }
 }

@@ -26,5 +26,7 @@ partial class Program
             Console.WriteLine("Fejl, prøv igen");
             ValutaOmregner();
         }
+        Console.WriteLine("\nTryk på en knap for at forsætte...");
+        Console.ReadKey();
     }
 }

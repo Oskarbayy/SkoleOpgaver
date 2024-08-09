@@ -36,5 +36,7 @@
             Console.WriteLine("Fejl, Prøv Igen");
             Pythagoras();
         }
+        Console.WriteLine("\nTryk på en knap for at forsætte...");
+        Console.ReadKey();
     }
 }

@@ -37,5 +37,7 @@ partial class Program
         {
             Console.WriteLine(i3);
         }
+        Console.WriteLine("\nTryk på en knap for at forsætte...");
+        Console.ReadKey();
     }
 }

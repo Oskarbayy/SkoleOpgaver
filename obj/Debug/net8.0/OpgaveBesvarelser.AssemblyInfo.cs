@@ -12,9 +12,9 @@ using System;
 using System.Reflection;
 
 [assembly: System.Reflection.AssemblyCompanyAttribute("OpgaveBesvarelser")]
-[assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
+[assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+16a83be36d589464e3c8c00c39fa5669b0882eb0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d6e2340c75cef6db1e8fc7eea5b8746f2f443ba3")]
 [assembly: System.Reflection.AssemblyProductAttribute("OpgaveBesvarelser")]
 [assembly: System.Reflection.AssemblyTitleAttribute("OpgaveBesvarelser")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

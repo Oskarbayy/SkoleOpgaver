@@ -17,5 +17,8 @@
         {
             Console.WriteLine(i);
         }
+
+        Console.WriteLine("\nTryk på en knap for at forsætte...");
+        Console.ReadKey();
     }
 }

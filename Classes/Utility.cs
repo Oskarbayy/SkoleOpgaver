@@ -1,20 +1,22 @@
-﻿public class Utility
+﻿using System.Diagnostics;
+
+public class Utility
 {
     // Unicode characters for box drawing
-    const string Horizontal = "\u2500";
-    const string Vertical = "\u2502";
-    const string TopRight = "\u2510";
-    const string TopLeft = "\u250C";
-    const string BottomRight = "\u2518";
-    const string BottomLeft = "\u2514";
+    private const string Horizontal = "\u2500";
+    private const string Vertical = "\u2502";
+    private const string TopRight = "\u2510";
+    private const string TopLeft = "\u250C";
+    private const string BottomRight = "\u2518";
+    private const string BottomLeft = "\u2514";
 
-    const string DownwardT = "\u252C";
-    const string UpwardT = "\u2534";
-    const string RightwardT = "\u251C";
-    const string LeftwardT = "\u2524";
-    const string Cross = "\u253C";
+    private const string DownwardT = "\u252C";
+    private const string UpwardT = "\u2534";
+    private const string RightwardT = "\u251C";
+    private const string LeftwardT = "\u2524";
+    private const string Cross = "\u253C";
 
-    public static string GetIntersectionCharacter(string[,] buffer, int x, int y, int width, int height, string currentChar)
+    public string GetIntersectionCharacter(string[,] buffer, int x, int y, int width, int height, string currentChar)
     {
         bool up = y > 0 && (buffer[y - 1, x] == Vertical || buffer[y - 1, x] == DownwardT || buffer[y - 1, x] == UpwardT || buffer[y - 1, x] == Cross);
         bool down = y < height - 1 && (buffer[y + 1, x] == Vertical || buffer[y + 1, x] == DownwardT || buffer[y + 1, x] == UpwardT || buffer[y + 1, x] == Cross);
@@ -36,34 +38,38 @@
         return currentChar; // return the original character if no connection is found
     }
 
-    public static void DrawBox(int row, int col, int height, int width)
+    public void DrawBox(Buffer buffer, int row, int col, int height, int width)
     {
         // Draw top and bottom
         for (int curCol = col; curCol < col + width; curCol++)
         {
-            Buffer.Set(row, curCol, Horizontal); // Top
-            Buffer.Set(row + height - 1, curCol, Horizontal); // Bottom 
+            buffer.Set(row, curCol, Horizontal); // Top
+            buffer.Set(row + height - 1, curCol, Horizontal); // Bottom 
         }
 
         // Draw walls left and right
         for (int curRow = row; curRow < row + height; curRow++)
         {
-            Buffer.Set(curRow, col, Vertical); // Left
-            Buffer.Set(curRow, col + width - 1, Vertical); // Right
+            buffer.Set(curRow, col, Vertical); // Left
+            buffer.Set(curRow, col + width - 1, Vertical); // Right
         }
 
         // Set corners
-        Buffer.Set(row, col, TopLeft);
-        Buffer.Set(row, col + width - 1, TopRight);
-        Buffer.Set(row + height - 1, col, BottomLeft);
-        Buffer.Set(row + height - 1, col + width - 1, BottomRight);
+        buffer.Set(row, col, TopLeft);
+        buffer.Set(row, col + width - 1, TopRight);
+        buffer.Set(row + height - 1, col, BottomLeft);
+        buffer.Set(row + height - 1, col + width - 1, BottomRight);
     }
 
-    public static void AddText(int row, int col, string text, ConsoleColor color = ConsoleColor.Black)
+    public void AddText(Buffer buffer, int row, int col, string text, ConsoleColor foregroundColor = ConsoleColor.White, ConsoleColor backgroundColor = ConsoleColor.Black)
     {
+        Debug.WriteLine(text);
+        Debug.WriteLine("Foreground: "+foregroundColor);
+        Debug.WriteLine("Backgrond: " + backgroundColor);
+
         for (int i = 0; i < text.Length; i++)
         {
-            Buffer.Set(row, col + i, text[i].ToString(), color);
+            buffer.Set(row, col + i, text[i].ToString(), foregroundColor, backgroundColor);
         }
     }
 }
