@@ -1,0 +1,4 @@
+C:\Users\osha\source\repos\OpgaveBesvarelser\OpgaveBesvarelser.Infrastructure\obj\Debug\net8.0\OpgaveBesvarelser.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\osha\source\repos\OpgaveBesvarelser\OpgaveBesvarelser.Infrastructure\obj\Debug\net8.0\OpgaveBesvarelser.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\osha\source\repos\OpgaveBesvarelser\OpgaveBesvarelser.Infrastructure\obj\Debug\net8.0\OpgaveBesvarelser.Infrastructure.AssemblyInfo.cs
+C:\Users\osha\source\repos\OpgaveBesvarelser\OpgaveBesvarelser.Infrastructure\obj\Debug\net8.0\OpgaveBesvarelser.Infrastructure.csproj.CoreCompileInputs.cache

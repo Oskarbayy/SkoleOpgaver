@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\osha\\Downloads\\USO opgave\\USO opgave\\Hjemmeside\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{30207C38-526F-4283-B20A-E3CA0578AD58}|USO Opgave2.csproj|c:\\users\\osha\\downloads\\uso opgave\\uso opgave\\hjemmeside\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{30207C38-526F-4283-B20A-E3CA0578AD58}|USO Opgave2.csproj|solutionrelative:index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "index.html",
+              "DocumentMoniker": "C:\\Users\\osha\\Downloads\\USO opgave\\USO opgave\\Hjemmeside\\index.html",
+              "RelativeDocumentMoniker": "index.html",
+              "ToolTip": "C:\\Users\\osha\\Downloads\\USO opgave\\USO opgave\\Hjemmeside\\index.html",
+              "RelativeToolTip": "index.html",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-08-29T05:28:25.993Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

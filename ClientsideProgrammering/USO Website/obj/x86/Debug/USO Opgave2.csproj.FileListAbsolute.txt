@@ -1,0 +1,2 @@
+C:\Users\osha\Downloads\USO opgave\USO opgave\Hjemmeside\obj\x86\Debug\USO Opgave2.csproj.AssemblyReference.cache
+C:\Users\osha\Downloads\USO opgave\USO opgave\Hjemmeside\obj\x86\Debug\USO Opgave2.csproj.CoreCompileInputs.cache

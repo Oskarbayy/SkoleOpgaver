@@ -1,0 +1,6 @@
+C:\Users\osha\Downloads\USO opgave\USO opgave\Hjemmeside\bin\Debug\ClassLibrary.dll
+C:\Users\osha\Downloads\USO opgave\USO opgave\Hjemmeside\bin\Debug\ClassLibrary.pdb
+C:\Users\osha\Downloads\USO opgave\USO opgave\Hjemmeside\obj\Debug\USO Opgave.csproj.AssemblyReference.cache
+C:\Users\osha\Downloads\USO opgave\USO opgave\Hjemmeside\obj\Debug\USO Opgave.csproj.CoreCompileInputs.cache
+C:\Users\osha\Downloads\USO opgave\USO opgave\Hjemmeside\obj\Debug\ClassLibrary.dll
+C:\Users\osha\Downloads\USO opgave\USO opgave\Hjemmeside\obj\Debug\ClassLibrary.pdb

@@ -1,0 +1,105 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\osha\\source\\repos\\DigitalClock\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{0743C797-640D-46CB-8643-DD86988DAA23}|DigitalClock\\DigitalClock.csproj|c:\\users\\osha\\source\\repos\\digitalclock\\digitalclock\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0743C797-640D-46CB-8643-DD86988DAA23}|DigitalClock\\DigitalClock.csproj|solutionrelative:digitalclock\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0743C797-640D-46CB-8643-DD86988DAA23}|DigitalClock\\DigitalClock.csproj|c:\\users\\osha\\source\\repos\\digitalclock\\digitalclock\\models\\clock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0743C797-640D-46CB-8643-DD86988DAA23}|DigitalClock\\DigitalClock.csproj|solutionrelative:digitalclock\\models\\clock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0743C797-640D-46CB-8643-DD86988DAA23}|DigitalClock\\DigitalClock.csproj|c:\\users\\osha\\source\\repos\\digitalclock\\digitalclock\\controllers\\clockcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0743C797-640D-46CB-8643-DD86988DAA23}|DigitalClock\\DigitalClock.csproj|solutionrelative:digitalclock\\controllers\\clockcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0743C797-640D-46CB-8643-DD86988DAA23}|DigitalClock\\DigitalClock.csproj|c:\\users\\osha\\source\\repos\\digitalclock\\digitalclock\\common\\utility.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0743C797-640D-46CB-8643-DD86988DAA23}|DigitalClock\\DigitalClock.csproj|solutionrelative:digitalclock\\common\\utility.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0743C797-640D-46CB-8643-DD86988DAA23}|DigitalClock\\DigitalClock.csproj|c:\\users\\osha\\source\\repos\\digitalclock\\digitalclock\\common\\constants.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0743C797-640D-46CB-8643-DD86988DAA23}|DigitalClock\\DigitalClock.csproj|solutionrelative:digitalclock\\common\\constants.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ClockController.cs",
+              "DocumentMoniker": "C:\\Users\\osha\\source\\repos\\DigitalClock\\DigitalClock\\Controllers\\ClockController.cs",
+              "RelativeDocumentMoniker": "DigitalClock\\Controllers\\ClockController.cs",
+              "ToolTip": "C:\\Users\\osha\\source\\repos\\DigitalClock\\DigitalClock\\Controllers\\ClockController.cs",
+              "RelativeToolTip": "DigitalClock\\Controllers\\ClockController.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAQwAwAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-16T07:36:55.572Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Utility.cs",
+              "DocumentMoniker": "C:\\Users\\osha\\source\\repos\\DigitalClock\\DigitalClock\\Common\\Utility.cs",
+              "RelativeDocumentMoniker": "DigitalClock\\Common\\Utility.cs",
+              "ToolTip": "C:\\Users\\osha\\source\\repos\\DigitalClock\\DigitalClock\\Common\\Utility.cs",
+              "RelativeToolTip": "DigitalClock\\Common\\Utility.cs",
+              "ViewState": "AQIAABwAAAAAAAAAAAAQwCkAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-16T07:01:53.945Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Constants.cs",
+              "DocumentMoniker": "C:\\Users\\osha\\source\\repos\\DigitalClock\\DigitalClock\\Common\\Constants.cs",
+              "RelativeDocumentMoniker": "DigitalClock\\Common\\Constants.cs",
+              "ToolTip": "C:\\Users\\osha\\source\\repos\\DigitalClock\\DigitalClock\\Common\\Constants.cs",
+              "RelativeToolTip": "DigitalClock\\Common\\Constants.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAAA4AAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-16T06:26:37.276Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Clock.cs",
+              "DocumentMoniker": "C:\\Users\\osha\\source\\repos\\DigitalClock\\DigitalClock\\Models\\Clock.cs",
+              "RelativeDocumentMoniker": "DigitalClock\\Models\\Clock.cs",
+              "ToolTip": "C:\\Users\\osha\\source\\repos\\DigitalClock\\DigitalClock\\Models\\Clock.cs",
+              "RelativeToolTip": "DigitalClock\\Models\\Clock.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAI4AAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-16T06:25:19.971Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\osha\\source\\repos\\DigitalClock\\DigitalClock\\Program.cs",
+              "RelativeDocumentMoniker": "DigitalClock\\Program.cs",
+              "ToolTip": "C:\\Users\\osha\\source\\repos\\DigitalClock\\DigitalClock\\Program.cs",
+              "RelativeToolTip": "DigitalClock\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-16T06:23:08.615Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

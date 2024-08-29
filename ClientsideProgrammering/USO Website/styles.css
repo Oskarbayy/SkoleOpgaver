@@ -1,0 +1,348 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('Font/Roboto-Regular.ttf') format('truetype');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Background from your project */
+body {
+    background-image: url('images/Background/floralBackground.png');
+    background-size: contain;
+    background-attachment: fixed;
+}
+
+#container {
+    width: 90%;
+    max-width: 1080px;
+    margin: 0 auto;
+    background-color: #0f0f0f;
+}
+
+/* Updated left section with your texture and color */
+section .left {
+    float: left;
+    width: 50%;
+    padding-top: 15vh;
+    text-align: center;
+    min-height: 50vh;
+    background-color: rgb(174, 141, 48);
+    background-image: url("images/Background/marble-texture.jpg");
+    background-size: cover;
+    background-repeat: repeat-y;
+    background-blend-mode: multiply;
+    background-color: rgba(170, 125, 0, 0.7);
+}
+
+/* Updated right section with your texture and color */
+section .right {
+    float: left;
+    width: 50%;
+    padding-top: 15vh;
+    text-align: center;
+    min-height: 50vh;
+    background-color: #2b2b2b;
+    color: white;
+    background-image: url("images/Background/marble-texture.jpg");
+    background-size: cover;
+    background-repeat: repeat-y;
+    background-blend-mode: multiply;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+section .left h1, section .right h1 {
+    font-size: 2.5rem;
+}
+
+.clearFix {
+    clear: both;
+}
+
+#slider {
+    padding-bottom: 5vh;
+}
+
+header, main, #slider {
+    padding-top: 1vh;
+    margin-bottom: 0;
+}
+
+/* header */
+header img {
+    padding-left: 1.5%;
+    max-width: 100%;
+    height: auto;
+}
+
+header ul {
+    float: right;
+    margin-right: 6%;
+}
+
+header ul li {
+    display: inline-flex;
+    align-items: center;  /* Gør teksten vertikalt centreret inden for hver li */
+    padding: 1.5% 0%;
+    text-decoration: none;
+    color: #ac8e40;
+    position: relative;
+    padding-bottom: 0.5rem;
+}
+
+
+/* Animation for top bar buttons */
+header ul li::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #ac8e40;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.3s ease-out;
+}
+
+header ul li:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+header ul li:hover {
+    color: white;
+}
+
+/* slider */
+#slider {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    background: #0f0f0f;
+}
+
+#slider img {
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    animation: slide 10s infinite;
+    animation-delay: 10s;
+}
+
+@keyframes slide {
+    0%   { transform: translateX(0); }
+    25%  { transform: translateX(-100%) }
+    75%  { transform: translateX(-100%); }
+    100% { transform: translateX(0); }
+}
+
+/* video */
+#video {
+    width: 100%;
+    padding-bottom: 5vh;
+}
+
+#video img {
+    width: 80%;
+    margin: 0 10%;
+}
+
+#video iframe {
+    width: 100%;
+    height: 50vh;
+    border: 1px solid transparent;
+    margin: 1.5vh 0;
+}
+
+/* koncerter */
+#concerts {
+    width: 100%;
+    position: relative;
+}
+
+#concerts img {
+    margin: 0 10%;
+    position: absolute;
+    top: 1.5vh;
+}
+
+#concerts .left {
+    background-color: #ac8e40;
+    color: #0f0f0f;
+}
+
+#concerts .right {
+    background-color: #0f0f0f;
+    color: #fff;
+}
+
+/* music */
+#music {
+    width:100%;
+    position: relative;
+}
+
+#music>img {
+    margin: 0 10%;
+    position: absolute;
+    top: 1.5vh;
+}
+
+#music .left {
+    background-color: #0f0f0f;
+    color: #fff;
+}
+
+#music .right {
+    background-color: #ac8e40;
+    color: #0f0f0f;
+}
+
+#music .left img, #music .right img {
+    margin: 1.5vh 0;
+}
+
+/* gear */
+#gear {
+    width:100%;
+    position: relative;
+}
+
+#gear>img {
+    margin: 0 10%;
+    position: absolute;
+    top: 1.5vh;
+}
+
+#gear .left {
+    background-color: #0f0f0f;
+    color: #0f0f0f;
+    height: 70vh;
+}
+
+#gear .left img {
+    height: 100%;
+}
+
+#gear .right {
+    background-color: #0f0f0f;
+    color: #fff;
+    height: 70vh;
+}
+
+#gear .right p {
+    width: 60%;
+    margin: 5vh auto;
+}
+
+#gear .right button {
+    margin-top: 5vh;
+    padding: 1.5vh 3%;
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    cursor: pointer;
+}
+
+#gear .right button:hover {
+    background-color: #ac8e40;
+    color: #0f0f0f;
+    border: 1px solid transparent;
+}
+
+/* socials */
+#socials {
+    width: 100%;
+    padding-top: 1.5vh;
+    padding-bottom: 1.5vh;
+    margin-top: 1.5vh;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+}
+
+#socials>div:nth-child(1) {
+    width: 25%;
+    float: left;
+    border-right: 1px solid #fff;
+}
+
+#socials>div:nth-child(1) img {
+    width: 80%;
+    margin: 0 10%;
+}
+
+#socials>div:nth-child(2) {
+    width: 50%;
+    float: left;
+    border-right: 1px solid #fff;
+}
+
+#socials>div:nth-child(2)>img {
+    width: 20%;
+    height: auto;
+    margin: 0 40%;
+}
+
+#socials>div:nth-child(2)>div {
+    padding-left: calc(5% - 1rem);
+}
+
+#socials>div:nth-child(2)>div img {
+    width: 30%;
+    margin: 0 5px;
+    max-height: 12.5vh;
+}
+
+#socials>div:nth-child(3) {
+    width: 25%;
+    float: left;
+    color: #fff;
+    text-align: center;
+}
+
+#socials>div:nth-child(3) h1  {
+    text-transform: uppercase;
+    text-align: left;
+    padding-left: 1.5rem;
+}
+
+#socials>div:nth-child(3) form {
+    margin: 1.5vh 0;
+}
+
+#socials>div:nth-child(3) input, #socials>div:nth-child(3) button {
+    padding: 0.5rem 1.5rem;
+    border: 2px solid #fff;
+}
+
+#socials>div:nth-child(3) button {
+    background-color: #fff;
+    position: relative;
+    left: -0.5rem;
+    color: #ac8e40;
+    cursor: pointer;
+}
+
+#socials>div:nth-child(3) input[type="text"], #socials>div:nth-child(3) input[type="text"]::placeholder {
+    background-color: #ac8e40;
+    color: #fff;
+}
+
+#socials>div:nth-child(3) p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5vh;
+}
+
+/* footer */
+footer {
+    width: 100%;
+    background-color: #0f0f0f;
+    color: lightgrey;
+    text-align: center;
+    padding: 1.5vh 3%;
+}

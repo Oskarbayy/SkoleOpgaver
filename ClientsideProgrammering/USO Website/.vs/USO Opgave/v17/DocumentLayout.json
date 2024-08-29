@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\osha\\Downloads\\USO opgave\\USO opgave\\Hjemmeside\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{877D8443-2264-4F56-ACE8-A6434CDA28B3}|USO Opgave.csproj|c:\\users\\osha\\downloads\\uso opgave\\uso opgave\\hjemmeside\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{877D8443-2264-4F56-ACE8-A6434CDA28B3}|USO Opgave.csproj|solutionrelative:index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{877D8443-2264-4F56-ACE8-A6434CDA28B3}|USO Opgave.csproj|c:\\users\\osha\\downloads\\uso opgave\\uso opgave\\hjemmeside\\styles.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{877D8443-2264-4F56-ACE8-A6434CDA28B3}|USO Opgave.csproj|solutionrelative:styles.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "styles.css",
+              "DocumentMoniker": "C:\\Users\\osha\\Downloads\\USO opgave\\USO opgave\\Hjemmeside\\styles.css",
+              "RelativeDocumentMoniker": "styles.css",
+              "ToolTip": "C:\\Users\\osha\\Downloads\\USO opgave\\USO opgave\\Hjemmeside\\styles.css",
+              "RelativeToolTip": "styles.css",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-08-29T05:27:23.993Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "index.html",
+              "DocumentMoniker": "C:\\Users\\osha\\Downloads\\USO opgave\\USO opgave\\Hjemmeside\\index.html",
+              "RelativeDocumentMoniker": "index.html",
+              "ToolTip": "C:\\Users\\osha\\Downloads\\USO opgave\\USO opgave\\Hjemmeside\\index.html",
+              "RelativeToolTip": "index.html",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-08-29T05:27:23.105Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,168 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\osha\\source\\repos\\OpgaveBesvarelser\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D3140E70-863A-44A1-A1D1-7A81BB476D63}|OpgaveBesvarelser\\OpgaveBesvarelser.csproj|c:\\users\\osha\\source\\repos\\opgavebesvarelser\\opgavebesvarelser\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D3140E70-863A-44A1-A1D1-7A81BB476D63}|OpgaveBesvarelser\\OpgaveBesvarelser.csproj|solutionrelative:opgavebesvarelser\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D3140E70-863A-44A1-A1D1-7A81BB476D63}|OpgaveBesvarelser\\OpgaveBesvarelser.csproj|c:\\users\\osha\\source\\repos\\opgavebesvarelser\\opgavebesvarelser\\objects\\windowmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D3140E70-863A-44A1-A1D1-7A81BB476D63}|OpgaveBesvarelser\\OpgaveBesvarelser.csproj|solutionrelative:opgavebesvarelser\\objects\\windowmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D3140E70-863A-44A1-A1D1-7A81BB476D63}|OpgaveBesvarelser\\OpgaveBesvarelser.csproj|c:\\users\\osha\\source\\repos\\opgavebesvarelser\\opgavebesvarelser\\common\\constants.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D3140E70-863A-44A1-A1D1-7A81BB476D63}|OpgaveBesvarelser\\OpgaveBesvarelser.csproj|solutionrelative:opgavebesvarelser\\common\\constants.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D3140E70-863A-44A1-A1D1-7A81BB476D63}|OpgaveBesvarelser\\OpgaveBesvarelser.csproj|c:\\users\\osha\\source\\repos\\opgavebesvarelser\\opgavebesvarelser\\opgaver\\metoderogfiler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D3140E70-863A-44A1-A1D1-7A81BB476D63}|OpgaveBesvarelser\\OpgaveBesvarelser.csproj|solutionrelative:opgavebesvarelser\\opgaver\\metoderogfiler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D3140E70-863A-44A1-A1D1-7A81BB476D63}|OpgaveBesvarelser\\OpgaveBesvarelser.csproj|c:\\users\\osha\\source\\repos\\opgavebesvarelser\\opgavebesvarelser\\opgaver\\porto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D3140E70-863A-44A1-A1D1-7A81BB476D63}|OpgaveBesvarelser\\OpgaveBesvarelser.csproj|solutionrelative:opgavebesvarelser\\opgaver\\porto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D3140E70-863A-44A1-A1D1-7A81BB476D63}|OpgaveBesvarelser\\OpgaveBesvarelser.csproj|c:\\users\\osha\\source\\repos\\opgavebesvarelser\\opgavebesvarelser\\opgaver\\ligningsl\u00F8seren.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D3140E70-863A-44A1-A1D1-7A81BB476D63}|OpgaveBesvarelser\\OpgaveBesvarelser.csproj|solutionrelative:opgavebesvarelser\\opgaver\\ligningsl\u00F8seren.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D3140E70-863A-44A1-A1D1-7A81BB476D63}|OpgaveBesvarelser\\OpgaveBesvarelser.csproj|c:\\users\\osha\\source\\repos\\opgavebesvarelser\\opgavebesvarelser\\opgaver\\celciusomregner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D3140E70-863A-44A1-A1D1-7A81BB476D63}|OpgaveBesvarelser\\OpgaveBesvarelser.csproj|solutionrelative:opgavebesvarelser\\opgaver\\celciusomregner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D3140E70-863A-44A1-A1D1-7A81BB476D63}|OpgaveBesvarelser\\OpgaveBesvarelser.csproj|c:\\users\\osha\\source\\repos\\opgavebesvarelser\\opgavebesvarelser\\objects\\buffer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D3140E70-863A-44A1-A1D1-7A81BB476D63}|OpgaveBesvarelser\\OpgaveBesvarelser.csproj|solutionrelative:opgavebesvarelser\\objects\\buffer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D3140E70-863A-44A1-A1D1-7A81BB476D63}|OpgaveBesvarelser\\OpgaveBesvarelser.csproj|c:\\users\\osha\\source\\repos\\opgavebesvarelser\\opgavebesvarelser\\opgaver\\morsekoden.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D3140E70-863A-44A1-A1D1-7A81BB476D63}|OpgaveBesvarelser\\OpgaveBesvarelser.csproj|solutionrelative:opgavebesvarelser\\opgaver\\morsekoden.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Main.cs",
+              "DocumentMoniker": "C:\\Users\\osha\\source\\repos\\OpgaveBesvarelser\\OpgaveBesvarelser\\Main.cs",
+              "RelativeDocumentMoniker": "OpgaveBesvarelser\\Main.cs",
+              "ToolTip": "C:\\Users\\osha\\source\\repos\\OpgaveBesvarelser\\OpgaveBesvarelser\\Main.cs",
+              "RelativeToolTip": "OpgaveBesvarelser\\Main.cs",
+              "ViewState": "AQIAABkAAAAAAAAAAAAQwCIAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-07T06:27:52.067Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "WindowMenu.cs",
+              "DocumentMoniker": "C:\\Users\\osha\\source\\repos\\OpgaveBesvarelser\\OpgaveBesvarelser\\Objects\\WindowMenu.cs",
+              "RelativeDocumentMoniker": "OpgaveBesvarelser\\Objects\\WindowMenu.cs",
+              "ToolTip": "C:\\Users\\osha\\source\\repos\\OpgaveBesvarelser\\OpgaveBesvarelser\\Objects\\WindowMenu.cs",
+              "RelativeToolTip": "OpgaveBesvarelser\\Objects\\WindowMenu.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAAAQwCQAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-09T11:28:01.15Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Constants.cs",
+              "DocumentMoniker": "C:\\Users\\osha\\source\\repos\\OpgaveBesvarelser\\OpgaveBesvarelser\\Common\\Constants.cs",
+              "RelativeDocumentMoniker": "OpgaveBesvarelser\\Common\\Constants.cs",
+              "ToolTip": "C:\\Users\\osha\\source\\repos\\OpgaveBesvarelser\\OpgaveBesvarelser\\Common\\Constants.cs",
+              "RelativeToolTip": "OpgaveBesvarelser\\Common\\Constants.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-14T08:11:10.124Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "CelciusOmregner.cs",
+              "DocumentMoniker": "C:\\Users\\osha\\source\\repos\\OpgaveBesvarelser\\OpgaveBesvarelser\\Opgaver\\CelciusOmregner.cs",
+              "RelativeDocumentMoniker": "OpgaveBesvarelser\\Opgaver\\CelciusOmregner.cs",
+              "ToolTip": "C:\\Users\\osha\\source\\repos\\OpgaveBesvarelser\\OpgaveBesvarelser\\Opgaver\\CelciusOmregner.cs",
+              "RelativeToolTip": "OpgaveBesvarelser\\Opgaver\\CelciusOmregner.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-13T06:58:03.702Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "LigningsL\u00F8seren.cs",
+              "DocumentMoniker": "C:\\Users\\osha\\source\\repos\\OpgaveBesvarelser\\OpgaveBesvarelser\\Opgaver\\LigningsL\u00F8seren.cs",
+              "RelativeDocumentMoniker": "OpgaveBesvarelser\\Opgaver\\LigningsL\u00F8seren.cs",
+              "ToolTip": "C:\\Users\\osha\\source\\repos\\OpgaveBesvarelser\\OpgaveBesvarelser\\Opgaver\\LigningsL\u00F8seren.cs",
+              "RelativeToolTip": "OpgaveBesvarelser\\Opgaver\\LigningsL\u00F8seren.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-13T06:57:56.879Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Porto.cs",
+              "DocumentMoniker": "C:\\Users\\osha\\source\\repos\\OpgaveBesvarelser\\OpgaveBesvarelser\\Opgaver\\Porto.cs",
+              "RelativeDocumentMoniker": "OpgaveBesvarelser\\Opgaver\\Porto.cs",
+              "ToolTip": "C:\\Users\\osha\\source\\repos\\OpgaveBesvarelser\\OpgaveBesvarelser\\Opgaver\\Porto.cs",
+              "RelativeToolTip": "OpgaveBesvarelser\\Opgaver\\Porto.cs",
+              "ViewState": "AQIAAJAAAAAAAAAAAAAAAHQAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-12T07:52:25.164Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "MorseKoden.cs",
+              "DocumentMoniker": "C:\\Users\\osha\\source\\repos\\OpgaveBesvarelser\\OpgaveBesvarelser\\Opgaver\\MorseKoden.cs",
+              "RelativeDocumentMoniker": "OpgaveBesvarelser\\Opgaver\\MorseKoden.cs",
+              "ToolTip": "C:\\Users\\osha\\source\\repos\\OpgaveBesvarelser\\OpgaveBesvarelser\\Opgaver\\MorseKoden.cs",
+              "RelativeToolTip": "OpgaveBesvarelser\\Opgaver\\MorseKoden.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAADYAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-12T07:48:45.273Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MetoderOgFiler.cs",
+              "DocumentMoniker": "C:\\Users\\osha\\source\\repos\\OpgaveBesvarelser\\OpgaveBesvarelser\\Opgaver\\MetoderOgFiler.cs",
+              "RelativeDocumentMoniker": "OpgaveBesvarelser\\Opgaver\\MetoderOgFiler.cs",
+              "ToolTip": "C:\\Users\\osha\\source\\repos\\OpgaveBesvarelser\\OpgaveBesvarelser\\Opgaver\\MetoderOgFiler.cs",
+              "RelativeToolTip": "OpgaveBesvarelser\\Opgaver\\MetoderOgFiler.cs",
+              "ViewState": "AQIAAKQAAAAAAAAAAAAswK4AAAAOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-12T06:24:18.853Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Buffer.cs",
+              "DocumentMoniker": "C:\\Users\\osha\\source\\repos\\OpgaveBesvarelser\\OpgaveBesvarelser\\Objects\\Buffer.cs",
+              "RelativeDocumentMoniker": "OpgaveBesvarelser\\Objects\\Buffer.cs",
+              "ToolTip": "C:\\Users\\osha\\source\\repos\\OpgaveBesvarelser\\OpgaveBesvarelser\\Objects\\Buffer.cs",
+              "RelativeToolTip": "OpgaveBesvarelser\\Objects\\Buffer.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAACsAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-09T11:28:22.435Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
