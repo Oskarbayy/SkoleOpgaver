@@ -1,0 +1,58 @@
+.card {
+    display: flex;
+    flex-direction: row; /* Keep the image and details side by side */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    gap: 10px;
+    margin: 20px;
+    align-items: stretch; /* Stretch both image and details to the same height */
+}
+
+.card .cardImage {
+    width: 40%;
+    height: 250px; /* Set a static height for the image */
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card .cardImage img {
+    width: 100%; /* Ensure the image takes full width */
+    height: 100%; /* Ensure the image takes full height */
+    object-fit: cover; /* Maintain aspect ratio, fill container, and crop as necessary */
+    object-position: center; /* Always show the center of the image */
+}
+
+.card .cardDetails {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Space out detail rows evenly */
+}
+
+.cardDetails .cardDetailRow {
+    flex: 1;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+/* Adjustments for smaller screens */
+@media (max-width: 768px) {
+    .card {
+        flex-wrap: nowrap; /* Prevent wrapping */
+        gap: 5px; /* Reduce gap between image and text */
+    }
+
+    .card .cardImage {
+        width: 35%; /* Reduce image width on smaller screens */
+        height: 200px; /* Adjust the static height for smaller screens */
+    }
+
+    .card .cardDetails {
+        width: 65%;
+    }
+}
+
+.debug {
+    border: 1px solid red;
+}
