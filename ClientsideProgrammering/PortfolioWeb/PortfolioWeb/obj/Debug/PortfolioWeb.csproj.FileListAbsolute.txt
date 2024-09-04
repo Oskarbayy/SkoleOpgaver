@@ -1,0 +1,6 @@
+C:\Users\osha\Desktop\Oskar-Hansen\ClientsideProgrammering\PortfolioWeb\PortfolioWeb\bin\Debug\PortfolioWeb.dll
+C:\Users\osha\Desktop\Oskar-Hansen\ClientsideProgrammering\PortfolioWeb\PortfolioWeb\bin\Debug\PortfolioWeb.pdb
+C:\Users\osha\Desktop\Oskar-Hansen\ClientsideProgrammering\PortfolioWeb\PortfolioWeb\obj\Debug\PortfolioWeb.csproj.AssemblyReference.cache
+C:\Users\osha\Desktop\Oskar-Hansen\ClientsideProgrammering\PortfolioWeb\PortfolioWeb\obj\Debug\PortfolioWeb.csproj.CoreCompileInputs.cache
+C:\Users\osha\Desktop\Oskar-Hansen\ClientsideProgrammering\PortfolioWeb\PortfolioWeb\obj\Debug\PortfolioWeb.dll
+C:\Users\osha\Desktop\Oskar-Hansen\ClientsideProgrammering\PortfolioWeb\PortfolioWeb\obj\Debug\PortfolioWeb.pdb
