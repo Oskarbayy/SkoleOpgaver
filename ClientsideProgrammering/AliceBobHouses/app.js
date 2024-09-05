@@ -9,6 +9,17 @@ app.get('/getlisting/:id', (req, res) => {
     let userID = req.params.id;
 })
 
+app.get('/searchListings', (req, res) => {
+    const searchTerm = req.query.term.toLowerCase();
+    
+    const filteredListings = cards.filter(property => 
+        property.street.toLowerCase().includes(searchTerm) || 
+        property.city.toLowerCase().includes(searchTerm)
+    );
+
+    res.json(filteredListings);
+});
+
 
 const cards = [
     {

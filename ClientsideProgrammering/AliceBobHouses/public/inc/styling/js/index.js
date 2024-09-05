@@ -73,6 +73,29 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
+document.addEventListener("DOMContentLoaded", function() {
+    var searchInput = document.getElementById("searchInput");
+    var searchForm = document.getElementById("searchForm");
+ 
+    searchForm.addEventListener("submit", function(event) {
+        event.preventDefault();
+        var searchTerm = searchInput.value.trim().toLowerCase();
+
+        fetch(`/searchListings?term=${searchTerm}`)
+            .then(response => response.json())
+            .then(data => {
+                const cardContainer = document.getElementById('listingBody');
+                cardContainer.innerHTML = ''; // Clear current listings
+                data.forEach(cardData => {
+                    const cardElement = createCard(cardData);
+                    cardContainer.appendChild(cardElement);
+                });
+            })
+            .catch(error => console.error('Error:', error));
+    });
+});
+
+
 function viewListing(id) {
   const modal = document.getElementById('modal');
   modal.innerHTML = '';
