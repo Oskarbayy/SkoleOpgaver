@@ -1,0 +1,205 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.clearFix {
+    clear: both;
+}
+
+.container {
+    width: 1080px;
+    margin: 0 auto;
+}
+
+html {
+    background-color: #F6F4EF;
+}
+
+header {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background-color: #fff;
+}
+
+header {
+    padding: 15px 30px;
+}
+
+ /* search bar */
+ #searchBar {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    background-color: #fff;
+ }
+
+ #searchBar form {
+    text-align: center;
+    width: 100%;
+ }
+
+ /* inputs */
+ #searchBar input, #searchBar button, #searchBar select {
+    padding: 15px 30px;
+    border: 1px solid rgba(0,0,0,0.2);
+    background-color: transparent;
+}
+
+#searchBar form {
+    width: 100%;
+}
+
+/* listingHeader */
+#listingHeader {
+    padding: 30px;
+}
+
+#listingHeader h3 {
+    width: 50%;
+    float: left;
+}
+
+#listingHeader button {
+    float: right;
+    padding: 15px;
+    background-color: transparent;
+    margin-right: 15px;
+}
+
+/* card */
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    margin: 15px;
+    background-color: #fff;
+}
+ 
+.card .cardImage {
+    width: 40%;
+    float: left;
+    height: 250px;
+    overflow: hidden;
+    position: relative;
+}
+ 
+.card .cardImage img {
+    width: 100%;
+}
+
+.card .cardImage p {
+    z-index: 2;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0,0,0,0.6);
+    padding: 15px;
+    color: #fff;
+}
+ 
+.card .cardDetails {
+    width: 60%;
+    float: left;
+    padding: 15px;
+    
+    position: relative;
+    height: 250px;
+}
+
+.card .cardDetails h3 {
+    line-height: 20px;
+}
+
+.card .cardDetails h3 span{
+    font-size: 0.7em;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.card .cardDetails .cardStats {
+    margin: 40px 0px;
+}
+
+.cardStats>div{
+    width: calc(33% - 30px);
+    float: left;
+    margin: 0px 15px;
+}
+
+.cardContact {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    border-top: 1px solid rgba(0,0,0,0.2);
+}
+
+.cardContact div:first-of-type {
+    width: 30%;
+    border-right: 1px solid rgba(0,0,0,0.2);
+    float: left;
+    padding: 15px;
+    text-align: center;
+}
+
+.cardContact button {
+    background-color: transparent;
+    padding: 5px 30px;
+}
+
+.cardContact div:nth-child(2) {
+    width: 100%;
+    text-align: right;
+    padding-right: 15px;
+    padding: 15px;
+}
+
+@media only screen and (max-width: 425px) {
+    .card .cardImage {
+        width: 100%;
+        height: 500px;
+    }
+
+    .card .cardDetails {
+        width: 100%;
+        font-size: 1.8em;
+    }
+
+    .card .cardDetails .cardStats {
+        margin: 20px 0px;
+    }
+    
+    .cardContact div:first-of-type button {
+        padding: 5px 30px;
+        font-size: 1.5em;
+    }
+
+    .card .cardImage p {
+        font-size: 1.8em;
+    }
+
+    #searchBar form {
+        padding: 15px;
+    }
+
+    #searchBar input, #searchBar button, #searchBar select {
+        padding: 15px 30px;
+        width: 33%;
+        font-size: 1.8em;
+    }
+
+    #searchBar button {
+        width: 10%;
+    }
+
+    #listingHeader h3 {
+        font-size: 1.8em;
+    }
+    
+    #listingHeader button {
+        font-size: 1.8em;
+    }
+}

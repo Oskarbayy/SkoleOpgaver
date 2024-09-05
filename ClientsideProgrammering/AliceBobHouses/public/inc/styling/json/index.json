@@ -1,0 +1,39 @@
+{
+    "properties": [
+      {
+        "id": 1,
+        "title": "Moderne villa med havudsigt",
+        "address": "Strandvejen 123, 2900 Hellerup",
+        "thumbnail": "https://example.com/images/property1.jpg",
+        "squareMeters": 200,
+        "price": 5000000,
+        "description": "Smuk moderne villa med en fantastisk udsigt over havet. Perfekt til familien, der ønsker ro og luksus.",
+        "coordinates": {
+          "latitude": 55.7321,
+          "longitude": 12.5763
+        },
+        "images": [
+          "https://example.com/images/property1_1.jpg",
+          "https://example.com/images/property1_2.jpg"
+        ]
+      },
+      {
+        "id": 2,
+        "title": "Charmerende bylejlighed",
+        "address": "Købmagergade 55, 1150 København K",
+        "thumbnail": "https://example.com/images/property2.jpg",
+        "squareMeters": 85,
+        "price": 3000000,
+        "description": "Centralt beliggende lejlighed i hjertet af København. Tæt på alle byens attraktioner og gode transportmuligheder.",
+        "coordinates": {
+          "latitude": 55.6799,
+          "longitude": 12.5736
+        },
+        "images": [
+          "https://example.com/images/property2_1.jpg",
+          "https://example.com/images/property2_2.jpg"
+        ]
+      }
+    ]
+  }
+  
