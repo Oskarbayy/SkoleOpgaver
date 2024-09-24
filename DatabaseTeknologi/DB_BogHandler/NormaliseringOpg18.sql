@@ -9,7 +9,7 @@ DROP DATABASE IF EXISTS DB_BogHandler;
 CREATE DATABASE DB_BogHandler;
 
 USE DB_BogHandler;
-
+    
 -- Create genres table
 CREATE TABLE genres
 (
