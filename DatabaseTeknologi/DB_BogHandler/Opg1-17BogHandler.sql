@@ -24,7 +24,7 @@ CREATE TABLE customers
     id            INT AUTO_INCREMENT PRIMARY KEY,
     name          VARCHAR(255) NOT NULL,
     address       VARCHAR(255) NOT NULL,
-    phone         INT          NOT NULL,
+    phone         int          NOT NULL,
     bought_books  INT          NOT NULL,
     favorite_book INT,
     FOREIGN KEY (favorite_book) REFERENCES books (id)
@@ -212,4 +212,3 @@ SELECT customers.name as "Customer Name",
 FROM customers
          INNER JOIN books
                     ON customers.favorite_book = books.id
-
