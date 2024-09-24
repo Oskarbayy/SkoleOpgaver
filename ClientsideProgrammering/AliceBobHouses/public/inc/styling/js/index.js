@@ -73,6 +73,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
+
 document.addEventListener("DOMContentLoaded", function() {
     var searchInput = document.getElementById("searchInput");
     var searchForm = document.getElementById("searchForm");
