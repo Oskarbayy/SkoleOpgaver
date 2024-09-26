@@ -1,0 +1,167 @@
+// Country Table
+Table countries {
+  id int [pk, increment]
+  name varchar(50) [not null] // Country Name
+  code varchar(3) [not null] // ISO Country Code
+}
+
+// State Table
+Table states {
+  id int [pk, increment]
+  name varchar(50) [not null] // State Name
+  country_id int [not null, ref: > countries.id] // Foreign key to countries table
+}
+
+// City Table
+Table cities {
+  id int [pk, increment]
+  name varchar(50) [not null] // City Name
+  postal_code varchar(10) [not null] // Postal Code
+  state_id int [not null, ref: > states.id] // Foreign key to states table
+}
+
+// Address Table
+Table addresses {
+  id int [pk, increment]
+  street varchar(50) [not null] // Street Name
+  city_id int [not null, ref: > cities.id] // Foreign key referencing cities table
+}
+
+// Hotels Table
+Table hotels {
+  id int [pk, increment]
+  name varchar(30) [not null] // Hotel Name
+  address_id int [not null, ref: > addresses.id] // Foreign key referencing addresses
+}
+
+// Rooms Table
+Table rooms {
+  id int [pk, increment]
+  hotel_id int [not null, ref: > hotels.id] // Foreign key referencing hotels
+  type varchar(1) [not null] // Room type (e.g., S for Single, D for Double)
+  room_number int [not null] // Room number
+  price decimal(6, 2) [not null] // Room price
+}
+
+// Person Table
+Table persons {
+  id int [pk, increment] // Person ID
+  first_name varchar(50) [not null] // First Name
+  last_name varchar(50) [not null] // Last Name
+  phone varchar(15) [not null] // Phone Number
+  email varchar(50) [not null] // Email Address
+  address_id int [not null, ref: > addresses.id] // Foreign key referencing addresses
+}
+
+// Guests Table
+Table guests {
+  id int [pk, increment] // Guest ID
+  person_id int [not null, ref: > persons.id] // Foreign key referencing persons
+  note text // Special notes about the guest (can be null)
+  fdm_member_id int // Nullable, since not all guests are FDM members
+}
+
+// Bookings Table
+Table bookings {
+  id int [pk, increment] // Booking ID
+  guest_id int [not null, ref: > guests.id] // Foreign key referencing guests
+  room_id int [not null, ref: > rooms.id] // Foreign key referencing rooms
+  start_date date [not null] // Start of reservation
+  end_date date [not null] // End of reservation
+  cancel_date date // Can be NULL if booking is not canceled
+  total_price decimal(10, 2) [not null] // Total price after discount
+  creation_date date [not null] // Date the booking was made
+  booking_source_id int [not null, ref: > booking_sources.id, note: 'Online, Desk, Phone'] // Type of booking
+  state_id int [not null, ref: > booking_states.id, note: 'Planned, Active, Expired, Cancelled'] // State of the booking
+}
+
+// Hotel Staff Table
+Table hotel_staff {
+  id int [pk, increment] // Staff ID
+  person_id int [not null, ref: > persons.id] // Foreign key referencing persons
+  hotel_id int [not null, ref: > hotels.id] // Foreign key referencing hotels
+  position_id int [not null, ref: > staff_positions.id] // Foreign key referencing staff positions
+  hire_date date [not null] // Hire date
+  terminated_date date // Can be NULL if staff member is still active
+}
+
+// Staff Positions Table
+Table staff_positions {
+  id int [pk, increment]
+  position_name varchar(50) [not null] // E.g., "Housekeeping", "Reception", etc.
+}
+
+// Booking Source Table
+Table booking_sources {
+  id int [pk, increment]
+  type_name varchar(50) [not null] // E.g., "Online", "Desk", "Phone"
+}
+
+// Booking States Table
+Table booking_states {
+  id int [pk, increment]
+  state_name varchar(50) [not null] // E.g., "Planned", "Active", "Expired", "Cancelled"
+}
+
+// Discounts Table
+Table discounts {
+  id int [pk, increment]
+  name text [not null] // Discount name or description
+  booking_id int [not null, ref: > bookings.id] // Foreign key referencing bookings
+  amount_flat decimal(10, 2) // Flat discount amount (can be NULL if not applicable)
+  amount_multi decimal(5, 2) // Multiplier discount amount (can be NULL if not applicable)
+}
+
+// Conference Centers Table
+Table conference_centers {
+  id int [pk, increment]
+  hotel_id int [not null, ref: > hotels.id] // Foreign key referencing hotels
+  name varchar(50) [not null] // Conference center name
+  capacity int [not null] // Maximum number of guests
+  equipment text // Available equipment (e.g., "Projector, Sound system")
+}
+
+// Catering Options Table
+Table catering_options {
+  id int [pk, increment]
+  name varchar(50) [not null] // Catering option name
+  description text // Catering option description
+  price_per_person decimal(10, 2) [not null] // Price per person for catering
+}
+
+// Conference Bookings Table
+Table conference_bookings {
+  id int [pk, increment]
+  guest_id int [not null, ref: > guests.id] // Foreign key referencing guests
+  conference_center_id int [not null, ref: > conference_centers.id] // Foreign key referencing conference centers
+  start_date date [not null] // Start date of the conference
+  end_date date [not null] // End date of the conference
+  num_guests int [not null] // Number of guests for the conference
+  equipment_requested text // Equipment requested by the customer
+  customer_requests text // Additional requests from the customer
+  catering_option_id int [ref: > catering_options.id] // Foreign key to catering options (optional)
+  total_price decimal(10, 2) [not null] // Total price for the conference
+}
+
+// Bike Types Table
+Table bike_types {
+  id int [pk, increment]
+  type_name varchar(50) [not null] // E.g., "Electric bike", "Cargo bike"
+}
+
+// Bikes Table
+Table bikes {
+  id int [pk, increment]
+  type_id int [not null, ref: > bike_types.id] // Foreign key referencing bike types
+  lock_code varchar(10) [not null] // The lock code for the bike
+  available tinyint(1) [default: 1] // Whether the bike is available for rent (1 = yes, 0 = no)
+}
+
+// Bike Rentals Table
+Table bike_rentals {
+  id int [pk, increment]
+  guest_id int [not null, ref: > guests.id] // Foreign key referencing guests
+  bike_id int [not null, ref: > bikes.id] // Foreign key referencing bikes
+  start_date date [not null] // Start date of the rental
+  end_date date [not null] // End date of the rental
+}
