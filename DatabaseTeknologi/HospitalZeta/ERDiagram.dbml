@@ -1,0 +1,106 @@
+Table countries {
+  id int [pk, increment]
+  name varchar(50) [not null]
+  code varchar(3) [not null]
+}
+
+Table states {
+  id int [pk, increment]
+  name varchar(50) [not null]
+  country_id int [not null, ref: > countries.id]
+}
+
+Table cities {
+  id int [pk, increment]
+  name varchar(50) [not null]
+  postal_code varchar(10) [not null]
+  state_id int [not null, ref: > states.id]
+}
+
+Table addresses {
+  id int [pk, increment]
+  street varchar(50) [not null]
+  city_id int [not null, ref: > cities.id]
+}
+
+Table persons {
+  id int [pk, increment]
+  first_name varchar(32) [not null]
+  last_name varchar(32) [not null]
+  phone varchar(16)
+  email varchar(255)
+  birth_date date
+  address_id int [ref: > addresses.id]
+}
+
+Table patients {
+  id int [pk, increment]
+  person_id int [unique, ref: > persons.id, not null]
+}
+
+Table doctor_journals {
+  doctor_id int [ref: > doctors.id]
+  journal_id int [ref: > journals.id]
+
+  indexes {
+    (doctor_id, journal_id) [unique]
+  }
+}
+
+Table doctor_agreements {
+  doctor_id int [ref: > doctors.id]
+  agreement_id int [ref: > agreements.id]
+
+  indexes {
+    (doctor_id, agreement_id) [unique]
+  }
+}
+
+Table doctor_specialties {
+  id int [pk, increment]
+  name varchar(32) [not null]
+  description text
+}
+
+Table doctors {
+  id int [pk, increment]
+  specialty_id int [ref: > doctor_specialties.id]
+  department_id int [ref: > departments.id]
+  person_id int [unique, ref: > persons.id, not null]
+}
+
+Table room_types {
+  id int [pk, increment]
+  name varchar(32) [not null]
+}
+
+Table rooms {
+  id int [pk, increment]
+  room_number int [not null]
+  room_type_id int [ref: > room_types.id, not null]
+}
+
+Table agreements {
+  id int [pk, increment]
+  name varchar(64) [not null]
+  description text
+  patient_id int [ref: > patients.id]
+  agreement_date date
+  agreement_time time
+  room_id int [ref: > rooms.id]
+}
+
+Table departments {
+  id int [pk, increment]
+  name varchar(32) [not null]
+  location varchar(32) [not null]
+}
+
+Table journals {
+  id int [pk, increment]
+  patient_id int [ref: > patients.id]
+  doctor_id int [ref: > doctors.id]
+  diagnose text
+  treatment text
+  journal_date date
+}
